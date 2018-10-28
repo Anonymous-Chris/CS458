@@ -1,32 +1,21 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Welcome</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to my First App!</h2>
-  <p>Lets get to know each other!!</p>
-  <ion-list>
+<ion-content padding >
+	
+  	<div padding>
+      <button block ion-button (click)="signIn()">Sign In</button>
+      <button block ion-button (click)="register()">Register</button>
+  		
 
-  <ion-item>
-    <ion-label fixed>First name</ion-label>
-    <ion-input type="text" value=""></ion-input>
-  </ion-item>
+  	</div>
 
-  <ion-item>
-    <ion-label fixed>Last name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+<img src = "./assets/imgs/hi.jpg">
 
-  <button ion-button icon-left color="appbase" (click)="showAlert()">
-    <ion-icon name='ios-alert'></ion-icon>
-    Login
-  </button>
-
-</ion-list>
-
-
+ 
 
 </ion-content>
 

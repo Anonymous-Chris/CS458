@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
-
+import {LoginPage} from '../login/login';
+import {RegisterPage} from '../register/register';
+import {InfoPage} from '../info/info';
 
 @Component({
   selector: 'page-home',
@@ -9,8 +11,12 @@ import { NavController, AlertController } from 'ionic-angular';
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController,public alertCtrl: AlertController) {
+  @ViewChild('username') uname;
+  @ViewChild('password') password;
 
+
+  constructor(public navCtrl: NavController,public alertCtrl: AlertController) {
+  
   }
 
  showAlert() {
@@ -18,9 +24,16 @@ export class HomePage {
       title: 'Alert!',
       subTitle: 'The app is not yet completed. You have to wait!',
       buttons: ['OK']
-    });
+    }); 
     alert.present();
   }
 
+  signIn(){
+    this.navCtrl.push(LoginPage);
+  }
+
+  register(){
+    this.navCtrl.push(InfoPage);
+  }
 }
 

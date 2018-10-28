@@ -1,0 +1,46 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+ 	<ion-item>
+    	<ion-label color="primary">First Name</ion-label>
+    	<ion-input placeholder="First Name"></ion-input>
+ 	</ion-item>
+
+ 	 <ion-item>
+ 	 <ion-label color="primary">Last Name</ion-label>
+    	<ion-input placeholder="LastName"></ion-input>
+    </ion-item>
+
+  	<ion-item>
+    	<ion-label color="primary" fixed>Contact</ion-label>
+    	<ion-input type="tel" placeholder="Phone number"></ion-input>
+  	</ion-item>
+
+  	<ion-item>
+    	<ion-label color="primary" fixed>Email Id</ion-label>
+    	<ion-input type="email" placeholder="Email Input"></ion-input>
+  	</ion-item>
+
+  	<ion-item>
+    	<ion-label color="primary" fixed>Gender</ion-label>
+    	<ion-input type="password" placeholder="Male or Female"></ion-input>
+  	</ion-item>
+
+  	<button ion-button icon-left color="appbase" (click)="showAlert()">
+    <ion-icon name='ios-alert'></ion-icon>
+    Submit
+  </button>
+</ion-list>
+</ion-content>
+
+
+  

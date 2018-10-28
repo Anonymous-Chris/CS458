@@ -1,0 +1,47 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Navigation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class = "names">
+	  <ion-list>
+      <li>
+        <button ion-button icon-left color="appbase" secondary (click)="loadHealth()">
+        <ion-icon name = 'medkit'></ion-icon>
+        Health</button>
+      </li>
+
+      <li>
+        <button ion-button icon-left color="appbase" secondary (click)="loadNepal()">
+        <ion-icon name = 'home'></ion-icon>
+        Nepal</button>
+      </li>
+
+ 
+      <li>
+
+        <button ion-button icon-left color="appbase" secondary (click)="loadSports()">
+       <ion-icon name = 'football'></ion-icon>
+        Sports</button>
+      </li>
+
+      <li>
+        <button ion-button icon-left color="appbase" secondary (click)="loadVideos()">
+        <ion-icon name = 'videocam'></ion-icon>
+        Videos</button>
+      </li>
+      <li>
+        <button ion-button icon-left color="appbase" secondary (click)="loadOthers()">
+       <ion-icon name = 'body'></ion-icon>
+        Others</button>
+      </li>
+
+ 
+  </ion-list>
+
+</ion-content>
