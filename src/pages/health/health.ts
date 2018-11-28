@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the HealthPage page.
  *
@@ -22,4 +22,7 @@ export class HealthPage {
     console.log('ionViewDidLoad HealthPage');
   }
 
+  logOut(){
+  this.navCtrl.push(HomePage);
+  }
 }

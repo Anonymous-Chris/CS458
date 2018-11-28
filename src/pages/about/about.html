@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="ranga">
 	<!-- <h2>New York</h2> -->
 	<ion-card>
   	<img src = "./assets/imgs/ny.jpg">
@@ -68,6 +68,15 @@
     <ion-card-title> Rose</ion-card-title>
   </ion-card>
 
+    <ion-card>
+      <h1> Upload Picture</h1>
+      <button ion-button (click)="showAlert()"> Upload a picture> </button>
+        <ion-item no-lines no-details>
+            <ion-avatar *ngIf="imgCheck">
+                <img [src]="userContent?.imgLocation" id="myImage" class="avatar_menu">
+            </ion-avatar>
+        </ion-item>
+    </ion-card>
 	
 <footer>
   <p>Posted by: Kshtiij Lingthep</p>

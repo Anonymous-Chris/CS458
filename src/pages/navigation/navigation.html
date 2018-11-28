@@ -1,7 +1,7 @@
 
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar hideBackButton *navbar>
     <ion-title>Navigation</ion-title>
   </ion-navbar>
 
@@ -10,38 +10,60 @@
 
 <ion-content class = "names">
 	  <ion-list>
+    <ion-col>
       <li>
-        <button ion-button icon-left color="appbase" secondary (click)="loadHealth()">
+        <button ion-button icon color="appbase" secondary (click)="loadHealth()">
         <ion-icon name = 'medkit'></ion-icon>
         Health</button>
       </li>
+    </ion-col>
 
+    <ion-col>
       <li>
-        <button ion-button icon-left color="appbase" secondary (click)="loadNepal()">
+        <button ion-button icon color="appbase" secondary (click)="loadNepal()">
         <ion-icon name = 'home'></ion-icon>
         Nepal</button>
       </li>
+    </ion-col>
 
- 
+    <ion-col>
       <li>
 
-        <button ion-button icon-left color="appbase" secondary (click)="loadSports()">
+        <button ion-button icon color="appbase" secondary (click)="loadSports()">
        <ion-icon name = 'football'></ion-icon>
         Sports</button>
       </li>
+    </ion-col>
 
+    <ion-col>
       <li>
-        <button ion-button icon-left color="appbase" secondary (click)="loadVideos()">
+        <button ion-button icon color="appbase" secondary (click)="loadVideos()">
         <ion-icon name = 'videocam'></ion-icon>
         Videos</button>
       </li>
+    </ion-col>
+    <ion-col>
       <li>
-        <button ion-button icon-left color="appbase" secondary (click)="loadOthers()">
+        <button ion-button icon color="appbase" secondary (click)="loadOthers()">
        <ion-icon name = 'body'></ion-icon>
         Others</button>
       </li>
-
+    </ion-col>
  
   </ion-list>
+
+  <footer>
+    <p>Posted by: Kshtiij Lingthep</p>
+    <p>Contact information: <a href="mailto:klingthe@go.olemiss.edu">
+    Klingthe@go.olemiss.edu</a></p>
+    <p><a href="https://www.facebook.com/skniyara" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/skniyara/?hl=en" target="_blank">Instagram</a>
+    <a href="https://twitter.com/limbe_me" target="_blank">Twitter</a></p>
+    <p>Copyright@Kshitij2018</p>
+
+    <button ion-button small icon color="appbase" secondary (click)="logOut()">
+       <ion-icon name = 'exit'></ion-icon>
+        Logout</button>
+  </footer>
 
 </ion-content>

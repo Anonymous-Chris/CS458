@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage,MenuController, NavController,Slides, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the NewsPage page.
  *
@@ -42,4 +42,8 @@ export class NewsPage {
     }
 
   ];
+
+  logOut(){
+  this.navCtrl.push(HomePage);
+  }
 }

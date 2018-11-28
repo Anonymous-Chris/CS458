@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the NepalPage page.
  *
@@ -21,5 +21,7 @@ export class NepalPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad NepalPage');
   }
-
+  logOut(){
+  this.navCtrl.push(HomePage);
+  }
 }

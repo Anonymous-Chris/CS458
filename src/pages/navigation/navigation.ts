@@ -4,10 +4,10 @@ import { NavController, NavParams } from 'ionic-angular';
 import { HealthPage } from '../health/health';
 import { NepalPage } from '../nepal/nepal';
 import { NewsPage } from '../news/news';
-
+import { HomePage } from '../home/home';
 import { SportsPage } from '../sports/sports';
 import { VideosPage } from '../videos/videos';
-import { OthersPage } from '../others/others';
+
 
 @Component({
   templateUrl: 'navigation.html',
@@ -69,6 +69,10 @@ import { OthersPage } from '../others/others';
 
   loadOthers(){
   this.nav.push(NewsPage);
+  }
+
+  logOut(){
+  this.nav.push(HomePage);
   }
 
 }

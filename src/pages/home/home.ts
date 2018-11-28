@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {LoginPage} from '../login/login';
 import {RegisterPage} from '../register/register';
-import {InfoPage} from '../info/info';
+
 
 @Component({
   selector: 'page-home',
@@ -33,7 +33,7 @@ export class HomePage {
   }
 
   register(){
-    this.navCtrl.push(InfoPage);
+    this.navCtrl.push(RegisterPage);
   }
 }
 

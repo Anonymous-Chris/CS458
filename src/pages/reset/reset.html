@@ -1,0 +1,35 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Forgot/Reset Password?</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-grid>
+  
+      <ion-row>
+  
+        <ion-col col-auto col-md-4>
+        </ion-col>
+  
+        <ion-col padding col-sm-12 col-md-4 class="login-signup">
+  
+                <ion-input class="input-field" type="text" placeholder="Email" [(ngModel)]="user.email" style="border-bottom: 1px #eee solid;"></ion-input>
+  
+                <br><br>
+  
+                <button ion-button full (click)="resetpwd(user)" class="btn-design">Reset Password</button>
+  
+        </ion-col>
+  
+        <ion-col col-auto col-md-4>
+        </ion-col>
+  
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
